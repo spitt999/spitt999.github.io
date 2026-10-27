@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bioinspired UUVs – Sritan Pittala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="index.html">Sritan Pittala</a>
+    <nav aria-label="Pages"><a href="index.html#work">All projects</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="page-title">
+      <a class="back" href="index.html#work">Back to all projects</a>
+      <h1>Bioinspired UUVs</h1>
+      <p class="meta">Research & Development Intern, Van Buren Labs, University of Delaware, 2023 and 2024</p>
+      <p style="max-width:40em">Two summers developing underwater vehicles for naval applications, each integrating 3D-printed structures, ballast and pump systems, waterproof housings, onboard electronics, and servo-actuated propulsion.</p>
+      <ul class="jump" aria-label="On this page"><li><a href="#summer-2023">Summer 2023</a></li><li><a href="#summer-2024">Summer 2024</a></li></ul>
+    </div>
+    <article class="item" id="summer-2023">
+      <h2>Summer 2023</h2>
+      <p class="meta">An underwater vehicle</p>
+      <div class="viewer " data-models="models/uuv-2023.glb|UUV, 2023"  role="img" aria-label="Interactive 3D model of the 2023 UUV"></div><p>My first summer on the team produced a UUV that wasn’t yet turtle-inspired.</p>
+    </article>
+    <article class="item" id="summer-2024">
+      <h2>Summer 2024</h2>
+      <p class="meta">The robotic turtle</p>
+      <div class="viewer " data-models="models/turtle-uuv.glb|Turtle UUV, 2024"  role="img" aria-label="Interactive 3D model of the 2024 turtle UUV"></div><p>I led the mechanical design of a modular, turtle-inspired UUV.</p><ul><li>Dual-servo fins for propulsion.</li><li>Interchangeable gasketed components for rapid species reconfiguration.</li></ul>
+    </article>
+  </main>
+  <footer id="contact">
+    <a href="mailto:sritan.pittala@duke.edu">sritan.pittala@duke.edu</a>
+    <a href="https://www.linkedin.com/in/sritan-pittala" rel="noopener">LinkedIn</a>
+    <a href="resume.pdf">Resume (PDF)</a>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>

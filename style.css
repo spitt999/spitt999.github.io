@@ -1,0 +1,56 @@
+:root{--bg:#fff;--ink:#16181d;--muted:#656b75;--line:#e3e5e9;--panel:#f4f5f7;--accent:#2f5d8a;--mesh:0x8b919b;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111316;--ink:#e8eaed;--muted:#9aa0aa;--line:#262a31;--panel:#181b20;--accent:#86aed6;--mesh:0xaab0ba;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111316;--ink:#e8eaed;--muted:#9aa0aa;--line:#262a31;--panel:#181b20;--accent:#86aed6;--mesh:0xaab0ba;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header.top{padding:28px 0;display:flex;justify-content:space-between;align-items:center;gap:16px}
+header.top .name{font-weight:700;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 48px}
+.hero h1{font-size:clamp(38px,7vw,64px);line-height:1.05;letter-spacing:-.025em;margin:0 0 24px;font-weight:700;max-width:14em}
+.hero p{max-width:34em;color:var(--muted);margin:0 0 8px;font-size:19px}
+.proj{padding:48px 0;border-top:1px solid var(--line);cursor:pointer}
+.proj h2{font-size:32px;line-height:1.15;letter-spacing:-.015em;margin:0 0 6px}
+.proj h2 a{color:var(--ink);text-decoration:none}
+.proj:hover h2 a{color:var(--accent)}
+.meta{color:var(--muted);margin:0 0 20px;font-size:15px}
+.proj p.sum{margin:20px 0 0;max-width:36em}
+.proj .more{display:inline-block;margin-top:10px;font-size:15px}
+.viewer{position:relative;aspect-ratio:16/10;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;cursor:grab;touch-action:pan-y}
+.viewer.wide{aspect-ratio:2/1}
+.viewer:active{cursor:grabbing}
+.viewer canvas{display:block;width:100%;height:100%}
+.viewer .note{position:absolute;left:14px;bottom:10px;font-size:13px;color:var(--muted);pointer-events:none}
+h2.sec{font-size:15px;font-weight:500;color:var(--muted);margin:0 0 28px}
+.page-title{padding:24px 0 8px}
+.page-title h1{font-size:clamp(34px,6vw,52px);line-height:1.08;letter-spacing:-.02em;margin:8px 0 8px}
+.back{font-size:15px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--ink)}
+.jump{display:flex;flex-wrap:wrap;gap:6px 22px;margin:20px 0 0;padding:0;list-style:none;font-size:15px}
+.jump li{margin:0}
+.item{padding:56px 0 8px;border-top:1px solid var(--line);margin-top:48px}
+.item:first-of-type{margin-top:32px}
+.item h2{font-size:28px;line-height:1.15;letter-spacing:-.015em;margin:0 0 6px}
+.item h3{font-size:17px;margin:24px 0 4px}
+.item p{margin:0 0 12px;max-width:40em}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 20px}
+.pair .viewer{aspect-ratio:1/1}
+.item .viewer{margin-bottom:20px}
+ul{margin:0 0 12px;padding-left:1.1em}
+li{margin:0 0 8px}
+li::marker{color:var(--muted)}
+.skills dl,.exp{display:grid;grid-template-columns:150px 1fr;gap:12px 24px;margin:0}
+.skills dt,.exp .when{color:var(--muted);font-size:15px}
+.skills dd{margin:0}
+.exp{margin:0 0 18px}
+section.plain{padding:48px 0;border-top:1px solid var(--line)}
+footer{padding:48px 0 64px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer a{margin-right:20px}
+@media (max-width:680px){.pair,.skills dl,.exp{grid-template-columns:1fr}.hero{padding:40px 0 32px}nav{gap:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

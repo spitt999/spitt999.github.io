@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Formula SAE – Sritan Pittala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="index.html">Sritan Pittala</a>
+    <nav aria-label="Pages"><a href="index.html#work">All projects</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="page-title">
+      <a class="back" href="index.html#work">Back to all projects</a>
+      <h1>Formula SAE</h1>
+      <p class="meta">Chassis Lead Engineer, Duke University Motorsports, 2024 to present</p>
+      <p style="max-width:40em">Five parts of the car I’ve worked on. Drag any model to rotate it, and click it to zoom with the scroll wheel.</p>
+      <ul class="jump" aria-label="On this page"><li><a href="#frame">The frame</a></li><li><a href="#steering-wheel">Steering wheel</a></li><li><a href="#timing-gates">Custom timing gates</a></li><li><a href="#firewall">Firewall</a></li><li><a href="#rear-jacking-bar">Rear jacking bar</a></li></ul>
+    </div>
+    <article class="item" id="frame">
+      <h2>The frame</h2>
+      <p class="meta">The chassis</p>
+      <div class="viewer " data-models="models/fsae-frame.glb|Frame"  role="img" aria-label="Interactive 3D model of the frame"></div>
+      <p>I own the chassis architecture: vehicle structure, ergonomics, and the driver interface and safety systems. I also coordinate packaging across teams so every subsystem fits.</p>
+      <h3>Torsional stiffness model</h3>
+      <p>A MATLAB model for specifying a torsional stiffness target, built alongside ANSYS models of how chassis compliance affects lateral load transfer. It let us refine the targets and take weight out of the frame.</p>
+      <h3>Custom fixtures</h3><div class="viewer " data-models="models/tube-fixture.glb|Tube fixture"  role="img" aria-label="Interactive 3D model of a tube fixture"></div>
+      <p>I introduced fixture-based frame manufacturing to the team, designing and producing 100+ precision tube fixtures.</p>
+      <h3>Frame metrics</h3><ul><li>Chassis subsystem design points up 27.7%.</li><li>Frame weight down 10%.</li><li>Welding time cut 50% at ±3 mm frame geometry accuracy.</li></ul>
+    </article>
+    <article class="item" id="steering-wheel">
+      <h2>Steering wheel</h2>
+      <p class="meta">Two generations</p>
+      <p>The team’s first SLS-printed steering wheel has a modular PCB housing with TPU gaskets, which cut electronics service time from minutes to seconds.</p>
+      <div class="pair"><div class="viewer " data-models="models/steering-wheel-gen1.glb|Generation 1"  role="img" aria-label="Interactive 3D model of the generation 1 steering wheel"></div>
+      <h3>Generation 1</h3><p>[Placeholder] What this version was and what you learned from it.</p>
+      <h3>Generation 2</h3><p>[Placeholder] What changed from generation 1 and why.</p><div class="viewer " data-models="models/steering-wheel-gen2.glb|Generation 2"  role="img" aria-label="Interactive 3D model of the generation 2 steering wheel"></div></div>
+    </article>
+    <article class="item" id="timing-gates">
+      <h2>Custom timing gates</h2>
+      <p class="meta"></p>
+      <div class="viewer " data-models="models/timing-gates.glb|Custom timing gates"  role="img" aria-label="Interactive 3D model: Custom timing gates"></div><p>[Placeholder] Describe what this is, what problem it solves, and what you were responsible for.</p><ul><li>[Placeholder] A key design decision and why you made it.</li><li>[Placeholder] An analysis, test, or result with a number.</li><li>[Placeholder] What you would change next time.</li></ul>
+    </article>
+    <article class="item" id="firewall">
+      <h2>Firewall</h2>
+      <p class="meta"></p>
+      <div class="viewer " data-models="models/firewall.glb|Firewall"  role="img" aria-label="Interactive 3D model: Firewall"></div><p>[Placeholder] Describe what this is, what problem it solves, and what you were responsible for.</p><ul><li>[Placeholder] A key design decision and why you made it.</li><li>[Placeholder] An analysis, test, or result with a number.</li><li>[Placeholder] What you would change next time.</li></ul>
+    </article>
+    <article class="item" id="rear-jacking-bar">
+      <h2>Rear jacking bar</h2>
+      <p class="meta"></p>
+      <div class="viewer " data-models="models/rear-jacking-bar.glb|Rear jacking bar"  role="img" aria-label="Interactive 3D model: Rear jacking bar"></div><p>[Placeholder] Describe what this is, what problem it solves, and what you were responsible for.</p><ul><li>[Placeholder] A key design decision and why you made it.</li><li>[Placeholder] An analysis, test, or result with a number.</li><li>[Placeholder] What you would change next time.</li></ul>
+    </article>
+  </main>
+  <footer id="contact">
+    <a href="mailto:sritan.pittala@duke.edu">sritan.pittala@duke.edu</a>
+    <a href="https://www.linkedin.com/in/sritan-pittala" rel="noopener">LinkedIn</a>
+    <a href="resume.pdf">Resume (PDF)</a>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>

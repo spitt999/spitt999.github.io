@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Robotic squid – Sritan Pittala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="index.html">Sritan Pittala</a>
+    <nav aria-label="Pages"><a href="index.html#work">All projects</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="page-title">
+      <a class="back" href="index.html#work">Back to all projects</a>
+      <h1>Robotic squid</h1>
+      <p class="meta">Repass-Rodgers Scholars, in progress</p>
+      <p style="max-width:40em">A robotic squid I’m designing as a Repass-Rodgers Scholar. Drag the model to rotate it, and click it to zoom with the scroll wheel.</p>
+      
+    </div>
+    <article class="item" id="design">
+      <h2>Current design</h2>
+      <p class="meta"></p>
+      <div class="viewer " data-models="models/squid.glb|Robotic squid"  role="img" aria-label="Interactive 3D model of the robotic squid"></div>
+      <p>[Placeholder] Describe what this is, what problem it solves, and what you were responsible for.</p><ul><li>[Placeholder] A key design decision and why you made it.</li><li>[Placeholder] An analysis, test, or result with a number.</li><li>[Placeholder] What you would change next time.</li></ul>
+    </article>
+  </main>
+  <footer id="contact">
+    <a href="mailto:sritan.pittala@duke.edu">sritan.pittala@duke.edu</a>
+    <a href="https://www.linkedin.com/in/sritan-pittala" rel="noopener">LinkedIn</a>
+    <a href="resume.pdf">Resume (PDF)</a>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>

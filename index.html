@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sritan Pittala – Mechanical Engineering Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="index.html">Sritan Pittala</a>
+    <nav aria-label="Sections"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>Mechanical engineer who designs, analyzes, and builds.</h1>
+      <p>I’m a mechanical engineering student at Duke with a Materials &amp; Aerospace Certificate and a Repass-Rodgers Scholar. I lead chassis design for Duke’s Formula SAE team and have built sensors, underwater vehicles, and structures from first sketch to finished part.</p>
+      <p>Drag a model to rotate it. Click a project to see the details.</p>
+    </div>
+    <div id="work">
+    <section class="proj" data-href="fsae.html">
+      <h2><a href="fsae.html">Formula SAE</a></h2>
+      <p class="meta">Chassis Lead Engineer, Duke University Motorsports, 2024 to present</p>
+      <div class="viewer wide" data-models="models/fsae-frame.glb|Frame,models/steering-wheel-gen2.glb|Steering wheel, generation 2,models/timing-gates.glb|Custom timing gates,models/firewall.glb|Firewall,models/rear-jacking-bar.glb|Rear jacking bar" data-zoom="off" data-interval="60000" role="img" aria-label="Rotating 3D models from the Formula SAE car"></div>
+      <p class="sum">The frame, steering wheel, timing gates, firewall, and rear jacking bar. The model above changes every minute.</p>
+      <a class="more" href="fsae.html">See the full project</a>
+    </section>
+    <section class="proj" data-href="soot-sensor.html">
+      <h2><a href="soot-sensor.html">Soot sensor</a></h2>
+      <p class="meta">Bergin Lab, Duke University, 2024 to 2025</p>
+      <div class="viewer wide" data-models="models/soot-sensor.glb|Soot sensor" data-zoom="off" role="img" aria-label="Interactive 3D model of the soot sensor"></div>
+      <p class="sum">A low-cost soot concentration sensor, 99% cheaper than commercial instruments with comparable accuracy.</p>
+      <a class="more" href="soot-sensor.html">See the full project</a>
+    </section>
+    <section class="proj" data-href="uuv.html">
+      <h2><a href="uuv.html">Bioinspired UUVs</a></h2>
+      <p class="meta">Van Buren Labs, University of Delaware, summers 2023 and 2024</p>
+      <div class="viewer wide" data-models="models/turtle-uuv.glb|Turtle UUV, 2024" data-zoom="off" role="img" aria-label="Interactive 3D model of the turtle UUV"></div>
+      <p class="sum">Two summers of underwater vehicles for naval applications, ending in a modular robotic turtle.</p>
+      <a class="more" href="uuv.html">See the full project</a>
+    </section>
+    <section class="proj" data-href="squid.html">
+      <h2><a href="squid.html">Robotic squid</a></h2>
+      <p class="meta">Repass-Rodgers Scholars, in progress</p>
+      <div class="viewer wide" data-models="models/squid.glb|Robotic squid" data-zoom="off" role="img" aria-label="Interactive 3D model of the robotic squid"></div>
+      <p class="sum">A robotic squid I’m designing as a Repass-Rodgers Scholar.</p>
+      <a class="more" href="squid.html">See the full project</a>
+    </section>
+    </div>
+    <!-- Rinehart Racing project section goes here when images are ready -->
+    <section class="plain" id="experience">
+      <h2 class="sec">Experience</h2>
+      <div class="exp"><div class="when">May to Aug. 2026</div><div><strong>Mechanical Engineering Intern</strong><br>Dominion Defense Systems | Rinehart Racing, Asheville, NC</div></div>
+      <div class="exp"><div class="when">Aug. 2024 to present</div><div><strong>Chassis Lead Engineer</strong><br>Duke University Motorsports (Formula SAE)</div></div>
+      <div class="exp"><div class="when">Aug. 2024 to Feb. 2025</div><div><strong>Mechanical Engineering Researcher</strong><br>Bergin Lab, Duke University</div></div>
+      <div class="exp"><div class="when">June 2023 to Aug. 2024</div><div><strong>Research &amp; Development Intern</strong><br>Van Buren Labs, University of Delaware</div></div>
+      <div class="exp"><div class="when">Expected May 2028</div><div><strong>B.S.E. Mechanical Engineering</strong><br>Duke University, Materials &amp; Aerospace Certificate, GPA 3.96</div></div>
+    </section>
+    <section class="plain skills" id="skills">
+      <h2 class="sec">Skills</h2>
+      <dl>
+        <dt>CAD and simulation</dt><dd>SolidWorks, Fusion360, Onshape, AutoCAD, ANSYS Mechanical, MATLAB</dd>
+        <dt>Programming</dt><dd>Java, Python, Arduino (C++)</dd>
+        <dt>Fabrication</dt><dd>3D printing, laser-cutting, water jetting, silicone molding, sheet metal bending, manual milling</dd>
+      </dl>
+    </section>
+  </main>
+  <footer id="contact">
+    <a href="mailto:sritan.pittala@duke.edu">sritan.pittala@duke.edu</a>
+    <a href="https://www.linkedin.com/in/sritan-pittala" rel="noopener">LinkedIn</a>
+    <a href="resume.pdf">Resume (PDF)</a>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>
