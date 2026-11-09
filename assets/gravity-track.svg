@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 355" role="img" aria-labelledby="title desc">
+<title id="title">Gravity car track profile</title><desc id="desc">A 1.935 meter incline at 24.32 degrees leads into a curved transition with a 1.63 meter radius, then a 4.024 meter flat run to the finish.</desc>
+<rect width="1000" height="355" rx="12" fill="#141820"/>
+<g font-family="Courier New,monospace" fill="#ead5b1"><text x="35" y="30" font-size="14" letter-spacing="2">TRACK PROFILE</text>
+<path d="M70 65 L299.2273462177701 168.59645865548947" fill="none" stroke="#e6b96e" stroke-width="6"/>
+<path d="M299.2273462177701 168.59645865548947 A211.89999999999998 211.89999999999998 0 0 0 386.4946473074072 187.4005546064118" fill="none" stroke="#8cb7c5" stroke-width="6"/>
+<path d="M386.4946473074072 187.4005546064118 H909.6146473074073" fill="none" stroke="#a0b68b" stroke-width="6"/>
+<g stroke="#69717d" stroke-dasharray="4 5"><path d="M299.2273462177701 180.59645865548947 V275"/><path d="M386.4946473074072 199.4005546064118 V275"/></g>
+<circle cx="70" cy="65" r="6" fill="#e6b96e"/><text x="80" y="51" font-size="16">START</text>
+<path d="M909.6146473074073 187.4005546064118 v-45" stroke="#ead5b1" stroke-width="2"/><path d="M909.6146473074073 142.4005546064118 h-24 v16 h24Z" fill="#ead5b1"/>
+<text x="904.6146473074073" y="216.4005546064118" text-anchor="end" font-size="16">FINISH</text>
+<text x="190" y="185" text-anchor="middle" font-size="18" fill="#e6b96e">01 / INCLINE</text><text x="190" y="211" text-anchor="middle" font-size="16">1.935 m · 24.32°</text>
+<path d="M345 241 V278" stroke="#8cb7c5"/><text x="345" y="303" text-anchor="middle" font-size="18" fill="#8cb7c5">02 / TRANSITION</text><text x="345" y="329" text-anchor="middle" font-size="16">Radius 1.63 m</text>
+<text x="640" y="180" text-anchor="middle" font-size="18" fill="#a0b68b">03 / FLAT RUN</text><text x="640" y="206" text-anchor="middle" font-size="16">4.024 m</text>
+</g></svg>
